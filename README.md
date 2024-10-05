@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📜 Telegraph CMS
 
-## Getting Started
+Use Telegram's Telegraph platform as a CMS/blogging tool for your site! 🚀
 
-First, run the development server:
+## 🛠 Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- ⚛️ **Next.js**
+- 💬 **Telegram** [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?logo=telegram&logoColor=white)](https://telegram.org)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ⚙️ Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Login via Telegraph Bot** 🤖  
+   - Open Telegram and chat with the Telegraph bot.
+   - Click on "Login as [your username]" to authorize.  
+   - This will open a browser, and you’ll be successfully logged in!
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Get Your Token** 🛡️  
+   - Open your browser’s DevTools:  
+     - `Inspect > Network > XHR (refresh)`
+   - Locate the `cookie` header and find your `tpf_token`.
 
-## Learn More
+3. **Add Token to Hosting** 🔑  
+   - Go to your static hosting platform (Vercel, Netlify, or Cloudflare Pages).  
+   - Add `TPF_TOKEN` as an environment variable with the value of your token.
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Deploy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+You can deploy to any static site hosting platform (e.g., Vercel, Netlify, CF Pages) with ease!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🗒 Backlog
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- ✅ **Check and verify all HTML tags**  
+  - Ensure that all HTML tags from the Telegraph API are parsed and rendered correctly on your site.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 📝 To Do
+
+- 📍 **Sitemap Generation**  
+  - Implement **sitemap generation** at build time using **next-sitemap** or another method to dynamically generate a sitemap for improved SEO.
+
+---
+
+💡 **Pro Tip**: Use Gitmojis to keep your project documentation lively and engaging! 
