@@ -23,7 +23,7 @@ interface PostData {
 }
 
 async function getPostData(path: string): Promise<PostData> {
-  const response = await fetch(`http://localhost:3000/api/post/${path}`);
+  const response = await fetch(`https://telegraphcms.pages.dev/api/post/${path}`);
   if (!response.ok) {
     throw new Error("Failed to fetch post data");
   }
