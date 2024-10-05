@@ -43,4 +43,7 @@ export async function GET(
     console.error('Error fetching page list:', error)
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
   }
-}
+
+  }
+  
+  export const runtime = 'edge';
