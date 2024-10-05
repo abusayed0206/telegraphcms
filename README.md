@@ -23,6 +23,9 @@ Use Telegram's Telegraph platform as a CMS/blogging tool for your site! 🚀
    - Go to your static hosting platform (Vercel, Netlify, or Cloudflare Pages).  
    - Add `TPF_TOKEN` as an environment variable with the value of your token.
 
+![ApplicationFrameHost_PJyY7c9dqw](https://github.com/user-attachments/assets/c2698750-659e-42c8-91c0-948920958691)
+
+
 ## 🚀 Deploy
 
 You can deploy to any static site hosting platform (e.g., Vercel, Netlify, CF Pages) with ease!
@@ -42,5 +45,3 @@ You can deploy to any static site hosting platform (e.g., Vercel, Netlify, CF Pa
   - Implement **sitemap generation** at build time using **next-sitemap** or another method to dynamically generate a sitemap for improved SEO.
 
 ---
-
-💡 **Pro Tip**: Use Gitmojis to keep your project documentation lively and engaging! 
