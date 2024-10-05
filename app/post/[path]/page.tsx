@@ -1,6 +1,6 @@
 // app/post/[path]/page.tsx
 
-import PostContent from './PostContent';
+import PostContent from "./PostContent";
 
 interface Params {
   path: string;
@@ -25,7 +25,7 @@ interface PostData {
 async function getPostData(path: string): Promise<PostData> {
   const response = await fetch(`http://localhost:3000/api/post/${path}`);
   if (!response.ok) {
-    throw new Error('Failed to fetch post data');
+    throw new Error("Failed to fetch post data");
   }
   return response.json();
 }
@@ -42,3 +42,4 @@ export default async function Post({ params }: { params: Params }) {
   const postData = await getPostData(params.path);
   return <PostContent initialData={postData} />;
 }
+export const runtime = "edge";
